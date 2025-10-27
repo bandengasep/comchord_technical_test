@@ -47,3 +47,14 @@ Thumbs.db
 # Temporary files
 *.tmp
 temp/
+
+# directory
+1-to-1 convos/
+bonus materials/
+.claude
+
+# specific files
+*.pdf
+*.docx
+technical-test-email.txt
+CLAUDE.md
