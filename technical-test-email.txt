@@ -1,0 +1,33 @@
+Hi Timothy, 
+
+Congratulations on passing the interview! As a next step, I'd like to provide you with a short technical test to help finalize our internship selection.
+
+ComChord Data Internship Technical Test
+
+Objectives:
+1. To validate your technical skills in data analysis and selecting appropriate visuals for the targeted user. 
+2. To observe how you approach and break down an ambiguous task.
+
+Important Constraint:
+The main task should take a maximum of 4 hours of focused time. Please do not spend longer than this; the goal is not perfection. You are encouraged to use Generative AI to expedite your process.
+
+Guidelines:
+Please allocate enough of your time to explore the data and consider the most useful way to visualize the past 1:1 and features that you extract from it for the manager, Sarah.
+
+Scenario:
+Sarah manages two direct reports, Alex and Javier. Her role involves guiding them, ensuring they achieve their objectives, and enabling their continued contribution to the team. You are provided a series of 1:1 reports between Sarah and her direct reports in this folder (1-to-1 convos)
+
+Expected Output:
+1. A data dashboard designed for Sarah.
+2. A short report that includes, but is not limited to: an explanation of your dashboard design choices, any difficulties encountered, and future areas of exploration you would consider beyond the given time constraint.
+
+Bonus Quest:
+There is a bonus subfolder (bonus materials) containing team conversations. Please consider how your dashboard might change for this set of conversations. This is not needed, but only if you find yourself particularly interested in it. 
+
+Submission Deadline:
+Please submit your work by Wednesday, 29 October, 2359hrs SGT. If you anticipate any constraints that prevent you from meeting this deadline, kindly inform me by replying to this email.
+
+I look forward to your response and wish you all the best!
+
+Sincerely,
+Alex

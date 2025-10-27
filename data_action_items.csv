@@ -1,0 +1,19 @@
+created_date,direct_report,action,owner,status,completed_date
+2025-09-14,Alex Rodriguez,Create prioritization scoring model,Alex,Completed,2025-09-20
+2025-09-14,Alex Rodriguez,Follow up with API vendor,Alex,Completed,2025-09-15
+2025-09-14,Alex Rodriguez,Launch in-app messaging for search,Alex,Completed,2025-09-18
+2025-09-14,Alex Rodriguez,Read 'Crucial Conversations' book,Alex,In Progress,
+2025-09-14,Alex Rodriguez,Get data science team support,Sarah,Completed,2025-09-16
+2025-09-21,Alex Rodriguez,Design UI mockups for search filters,Alex,Completed,2025-09-27
+2025-09-21,Alex Rodriguez,A/B test search feature variations,Alex,In Progress,
+2025-09-28,Alex Rodriguez,Draft Q4 OKRs,Alex,In Progress,
+2025-09-28,Alex Rodriguez,Present Q4 plan to leadership,Alex,Pending,
+2025-10-06,Alex Rodriguez,Finalize Q4 presentation deck,Alex,Pending,
+2025-09-07,Javier Morales,Send automation roadmap Confluence link,Javier,Completed,2025-09-08
+2025-09-07,Javier Morales,Send certification proposal,Javier,Pending,
+2025-09-07,Javier Morales,Add checkout bug to regression suite,Javier,Completed,2025-09-10
+2025-09-07,Javier Morales,Complete final interviews for QA hire,Javier,Completed,2025-09-12
+2025-09-22,Javier Morales,Reduce flaky test count by 30%,Javier,In Progress,
+2025-09-22,Javier Morales,Evaluate Playwright vs Cypress,Javier,In Progress,
+2025-10-07,Javier Morales,Finalize QA hire offer,Javier,Pending,
+2025-10-07,Javier Morales,Document shift-left testing strategy,Javier,Pending,

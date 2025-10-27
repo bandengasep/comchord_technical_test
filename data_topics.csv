@@ -1,0 +1,25 @@
+meeting_date,direct_report,topic,time_spent_mins,priority
+2025-09-14,Alex Rodriguez,Mobile Redesign,15,High
+2025-09-14,Alex Rodriguez,Feature Prioritization,12,High
+2025-09-14,Alex Rodriguez,OKR Progress,10,Medium
+2025-09-14,Alex Rodriguez,API Integration,8,Medium
+2025-09-14,Alex Rodriguez,Career Development,15,Medium
+2025-09-21,Alex Rodriguez,Mobile Redesign,20,High
+2025-09-21,Alex Rodriguez,Search Feature Adoption,15,High
+2025-09-21,Alex Rodriguez,Stakeholder Management,10,Medium
+2025-09-28,Alex Rodriguez,OKR Progress,18,High
+2025-09-28,Alex Rodriguez,Q4 Planning,15,High
+2025-09-28,Alex Rodriguez,Mobile Redesign,12,Medium
+2025-10-06,Alex Rodriguez,Q4 Planning,25,High
+2025-10-06,Alex Rodriguez,Performance Issues,15,Medium
+2025-09-07,Javier Morales,Test Automation,20,High
+2025-09-07,Javier Morales,Quality Metrics,10,Medium
+2025-09-07,Javier Morales,Bug Analysis,12,High
+2025-09-07,Javier Morales,Hiring,8,Medium
+2025-09-07,Javier Morales,Career Development,5,Low
+2025-09-22,Javier Morales,Test Automation,25,High
+2025-09-22,Javier Morales,Flaky Tests,15,High
+2025-09-22,Javier Morales,Quality Metrics,8,Low
+2025-10-07,Javier Morales,Test Automation,22,High
+2025-10-07,Javier Morales,Hiring,12,Medium
+2025-10-07,Javier Morales,Tooling Evaluation,10,Medium

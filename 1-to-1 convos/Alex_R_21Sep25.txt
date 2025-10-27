@@ -1,0 +1,71 @@
+﻿Participants:
+● Sarah Chen (Manager): Senior Director of Product
+● Alex Rodriguez (Direct Report): Product Manager
+Date: September 21, 2025
+Time: 10:00 AM - 11:00 AM
+Format: Video call
+Sarah: Hey Alex, morning!
+Alex: Morning, Sarah! How was your weekend? Any more kid-filled birthday parties?
+Sarah: Thankfully no. It was actually pretty quiet. We tried that new Italian place downtown everyone's been talking about. It was... okay. Honestly, a bit overhyped, if you ask me. How about you? Did you recover from Mission Peak?
+Alex: My legs finally stopped hurting on Wednesday! So yeah, this weekend was much lower-key. Just relaxed, caught up on some reading. Oh, and I started that book you recommended, "Crucial Conversations."
+Sarah: Oh yeah? What do you think so far?
+Alex: It's... intense. I'm only a couple of chapters in, but it's already making me rethink a few conversations I had last week. Definitely see why you recommended it.
+Sarah: Good, good. It's one of those books that's genuinely useful. So, speaking of conversations, I'm guessing you heard back from that analytics vendor?
+Alex: I did! So, I sent that firmer email like we talked about, copying their account manager. Got a response in about... three hours.
+Sarah: See? What'd I tell you?
+Alex: Yeah, you were right. Suddenly it was all "so sorry for the delay." We got the API docs and sandbox access the next day. Engineering is already digging in, and it looks like we're back on track.
+Sarah: That's great news, Alex. Nice job handling that. It's a tricky balance, but you got it done.
+Alex: Thanks. It felt good to get it unblocked.
+Sarah: Awesome. Alright, so let's check in on the other action items from last week. How's the new prioritization scoring model coming along?
+Alex: Really well, actually. I took your advice and created a weighted model. I've got criteria for strategic alignment with OKRs, user value, business impact-like you suggested-and also added engineering effort and a confidence score.
+Sarah: Smart. Have you shared it with anyone yet?
+Alex: Yep. I had a session with the engineering lead and our lead designer. They gave some great feedback. We tweaked the weights a bit-they (rightfully) wanted to give a little more weight to addressing tech debt, which I hadn't really factored in.
+Sarah: Oh, that's a fantastic point.
+Alex: Yeah, so I added a "Health & Maintenance" criteria. The plan is to present it to the broader team, including leads from sales and marketing, in our next product sync, so everyone understands how we'll be scoring new requests.
+Sarah: That is perfect, Alex. You're not just creating a tool, you're creating buy-in for the process. That's exactly what we need.
+Alex: I'm hoping it cuts down on the "but my feature is more important" drive-bys.
+Sarah: It will. Once people see the system, they'll start framing their requests within that system. It changes the whole conversation. Okay, so what about the search adoption OKR? How did the in-app messaging campaign go?
+Alex: So, we launched it on Tuesday. The campaign targets users who've used basic search three or more times but haven't touched the advanced filters.
+Sarah: And?
+Alex: And it's working! It's still early, but we've seen a 40% increase in advanced filter usage from the group that got the message.
+Sarah: A 40% lift? Alex, that's huge!
+Alex: I was pretty pumped. Our overall adoption rate for the feature is up from 15% to 19% in just a few days. It's not at our 25% target yet, but it's a massive jump in the right direction.
+Sarah: That's a huge win. Seriously, great execution. What about the UI tweaks we discussed?
+Alex: Design has mockups ready. We're running a few usability tests this afternoon to see which one performs best before we commit to building it.
+Sarah: Excellent. Keep me posted on that. It sounds like you've completely turned that key result around.
+Alex: Feels like it. Now, on to your action item... were you able to talk to David about data science support?
+Sarah: I was. So... it's a bit of a mixed bag, but I think it's a net positive. David's team is just as slammed as we thought. He can't give us a dedicated resource for the whole quarter.
+Alex: Ah, that's what I was afraid of.
+Sarah: But... he did agree to assign a data scientist, Meena, to us for a three-week "discovery sprint." Her job will be to analyze our current rule-based system and user data, and then deliver a formal proposal for what a real ML-based recommendation engine would take to build, and what the likely uplift would be.
+Alex: Okay... so we don't get a builder, but we get a planner.
+Sarah: Exactly. It's not the instant gratification we wanted, but it's a huge step forward. It gets our project officially on their roadmap. And honestly, having a data-backed proposal from one of his own scientists is the only way we're going to get the full resources we need in Q1.
+Alex: You know what? That's a great outcome. It gives us a clear path instead of just being stuck in line. I'll reach out to Meena today to get her set up.
+Sarah: Perfect. Which brings us to... Q4 planning. You're officially leading the charge. How are you feeling about it?
+Alex: Good. A little nervous, like you said I should be, but good. I've started blocking out time, like we discussed, just for strategic thinking. I pulled the Q4 plans and retros from the last two years to see what worked and what didn't.
+Sarah: Good place to start. What are your initial thoughts?
+Alex: Well, I've been thinking a lot about the company's big theme for next year: "Expansion." I think our Q4 needs to be all about setting the stage for that.
+Sarah: How so?
+Alex: I see two main tracks. First, we need to pay down the "new user" tech debt. Our onboarding is still a bit clunky-the A/B test data proves that. If we're going to expand, we have to nail the first-time user experience. Second, we need to get that recommendation engine proposal from Meena buttoned up. A personalized homescreen is, in my opinion, the single biggest lever we have for expansion-driven engagement.
+Sarah: I 100% agree. You're focusing on the right foundations. You're not getting distracted by shiny objects.
+Alex: I'm trying. I'm using the new scoring model on my own strategic ideas.
+Sarah: Even better. Okay, so your next step is to start fleshing those themes out with data and socializing them with engineering and design. I want you to set up a formal Q4 kickoff meeting for our team for... let's say, the first week of October. And you'll run it.
+Alex: Wow. Okay. Yeah, I can do that.
+Sarah: You can. This is your stretch assignment, remember? I'm here to back you up, but you're in the driver's seat.
+Alex: Got it. Thanks, Sarah. It's a big opportunity, and I'm really... I'm ready for it.
+Sarah: I know you are. Alright, we've got about 15 minutes left. Any new fires this week? Or anything else on your mind?
+Alex: One new thing, actually. The performance on older Android devices that we talked about? Engineering dug in. It's a bit worse than we thought.
+Sarah: Oh?
+Alex: Yeah, it's a memory leak tied to one of our third-party SDKs. It's not just slow; it's causing crashes for about 2% of our Android user base.
+Sarah: Oof. Okay, that's critical. 2% is not a "fix it next sprint" number.
+Alex: My thought exactly. I've already talked to the engineering lead. We think we need to pull two engineers off new feature work for a week to build a hotfix. It's going to mean pushing the next feature in the mobile redesign back by a sprint.
+Sarah: You made the right call. Stability and performance come first. Did you communicate this to stakeholders yet?
+Alex: Not yet. I wanted to run it by you first.
+Sarah: You have my full support. Send out an update today. Be clear: it's a critical stability-fix-first trade-off. It's not a "delay," it's a "reprioritization" to protect the user experience. Frame it just like that.
+Alex: Will do. Thanks.
+Sarah: Great. Okay, this was a fantastic follow-up session. You've made incredible progress on all the action items. You unblocked the vendor, launched a successful campaign, and you're already taking real ownership of the Q4 planning.
+Alex: Thanks, Sarah. It feels good to be moving forward on so many fronts.
+Sarah: You should feel proud. You're really stepping up from just managing features to managing the product. Keep it up.
+Alex: Thanks. I really appreciate it.
+Sarah: Alright, go get that hotfix update sent out. I'll talk to you same time next week.
+Alex: Sounds good. Have a great week, Sarah!
+Sarah: You too. Bye!

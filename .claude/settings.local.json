@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(\"/mnt/c/Users/User/anaconda3/envs/nbs-msba/python.exe\" generate_synthetic_data.py)",
+      "Bash(\"/mnt/c/Users/User/anaconda3/envs/nbs-msba/Scripts/streamlit.exe\" run dashboard.py)"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}

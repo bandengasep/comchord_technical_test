@@ -1,0 +1,110 @@
+﻿Participants:
+● Sarah Chen (Manager): Senior Director of Product
+● Alex Rodriguez (Direct Report): Product Manager
+Date: September 28, 2025
+Time: 3:00 PM - 4:00 PM
+Format: Video call
+
+Alex: Hey Sarah. So sorry, my last meeting you know how it is. It just kept going.
+Sarah: No problem, Alex. Afternoon 1:1s are always a bit chaotic, aren't they? Feels like the day is already running away from you. How's your week starting out?
+Alex: It's it's been a week, and it's only Monday. No, it's it's busy. Really busy. But I think, uh, productive. Mostly.
+Sarah: Mostly? I like the qualifier. Let's get into it. So, first things first, let's go through the follow-ups from last week. You had the big presentation of the prioritization scoring model in the product sync. How did that land?
+Alex: Right. Yeah. So, I did that on Friday. It it went okay. I think. The engineering and design leads were totally on board. They they actually seemed relieved. They liked that 'Health & Maintenance' was a real criterion, and they felt it would protect them from you know, just chasing the next shiny object.
+Sarah: That's great. Getting them bought in is half the battle. So what's the what's the okay part? Let me guess. Mark from Sales.
+Alex: Yeah. It was it was pretty rough, Sarah. I walked everyone through the model, the criteria, the weighting. And I got to the Q&A part, and he just he unmuted and just sort of laid into it.
+Sarah: What did he say?
+Alex: He said, So this 'Health &Maintenance' score that means my revenue feature gets a lower score than some 'refactor'? And I I tried to explain. I said, Well, not necessarily, it's all weighted, and 'Business Impact' is still the highest weight, so a high-revenue feature would score very well and he just kind of cut me off. In front of everyone.
+Sarah: Ugh. Classic Mark.
+Alex: He said, and this is this is a direct quote, This is why product moves so slow. Too many spreadsheets, not enough common sense. This just looks like a bureaucratic way for you to say no to me. I I was just I was floored. The whole meeting went quiet.
+Sarah: So what did you do?
+Alex: I I froze, for a second. I just I think I stammered something like, I I'm just trying to create a transparent system, and he just scoffed. I I didn't really know what to do. I just I looked at the next person who had their hand up and said, Any other questions? and I moved on. It felt it felt terrible. Like I'd just been run over.
+Sarah: Yeah, he's he's a bull in a china shop. He thinks being the loudest person in the room means he's right. Look, here's a tip for next time-and there will be a next time with him. When he does that, you don't really engage on the the substance of it. You just smile, keep it breezy, and say, Mark, that's great feedback. I'm happy to take your thoughts on the weighting offline, but for the sake of everyone else's time, we need to move on to the next agenda item.
+Alex: Take it offline
+Sarah: Exactly. It, you know, it does two things. It validates him-great feedback-but it doesn't let him hijack the meeting. It shuts it down without you being defensive or getting into a public fight you can't win. Don't let him rattle you. He does this to everyone. He really does.
+Alex: Okay yeah. Take it offline. I can I can try to remember that. It just it really threw me off my game for the rest of the meeting.
+Sarah: I get it. It's a learned skill. Don't don't dwell on it. The model is approved, it's in place. He'll have to use it. That's the win. Okay, so let's move on. What about the search adoption OKR? How were the usability tests for the UI tweaks?
+Alex: Oh, good news there. Really good. The tests were super clear. We had two versions. Option A was a subtle change, just making the 'Filters' link a different color. Option B was the 'bold' change: we removed the link entirely and just showed the top three advanced filters by default, right below the search bar, with a 'More Filters' button.
+Sarah: And?
+Alex: Option B won. It wasn't even close. Every single user in the test found and used the filters with Option B. With Option A, it was still only about 30%. So, we we have a clear winner.
+Sarah: That's fantastic. See? That's how you do it. Data wins.
+Alex: Yep. I already wrote the story, and the engineering lead confirmed he's pulling it into the current sprint. He said it was an easy change. So that, plus the in-app messaging campaign I'm feeling really good about hitting our 25% target this quarter.
+Sarah: Excellent, Alex. That's a huge win. You identified the problem, tested a solution, and got it shipped. Perfect. What's the update on Meena and the data science discovery sprint?
+Alex: Also good! I connected with her last week. She's great. Really smart, really collaborative. She's already digging into our data. We had a quick sync this morning, and she thinks our current rule-based system is, uh her word was suboptimal, which I'm pretty sure is data-scientist-speak for complete garbage.
+Sarah: Heh. Sounds about right.
+Alex: She's already found, like, three major cohorts of users that are getting completely irrelevant recommendations. She's really excited. She thinks a proper ML model could have a non-trivial impact on engagement. So, her discovery sprint is on track.
+Sarah: Good. Keep close to her. That proposal she's building is our golden ticket for Q1. And what about the Android hotfix? Did you communicate the reprioritization out?
+Alex: I did. I sent the update on Tuesday, just like we talked about. Framed it as a critical stability reprioritization to protect the user experience.
+Sarah: Any blowback?
+Alex: Well. Ninety percent of people were fine. Understood completely. But Mark from Sales replied-all to the entire stakeholder list.
+Sarah: Oh, for for God's sake. What did he say this time?
+Alex: He just wrote, Does this stability 'reprioritization' impact the timeline for the social sharing feature we discussed? A feature that isn't even on the roadmap. He just he loves an audience.
+Sarah: That man. He's unbelievable. What did you do? Please tell me you didn't reply-all back.
+Alex: No, no! I I remembered what you said. I just replied directly to him, just him, and said, This hotfix doesn't impact any committed roadmap features, just the sprint goal for this week. The social sharing feature is still in the 'ideas' backlog, and we can score it with the new prioritization model once it's ready for review.
+Sarah: Good. Good. That's well, it's fine. Honestly, with him, you could have just ignored it. But that's a fine, professional response. And the hotfix itself?
+Alex: It shipped. It went out in a special release on Saturday. We've been monitoring the logs all morning. Crash rates on those older Android devices are down 95%. It worked.
+Sarah: Perfect. Crisis averted. That's a great job by you and the engineering team, handling that so quickly.
+Alex: Thanks. It feels good to have that fixed.
+Sarah: Alright, so it sounds like all the tactical stuff from last week is in a great spot. Which brings us to the big one. The main event. Q4 planning. You've been socializing the themes we discussed, right? The 'Expansion' mandate, focusing on onboarding and the recommendation engine?
+Alex: Yeah. I have. I've been talking to my eng lead, the design lead everyone was really aligned. The Expansion theme resonates. They get that we need to fix the leaky bucket with onboarding and fill the bucket with the rec engine. It all it all felt really good. Coherent.
+Sarah: Great.
+Alex: So, I started building out the draft OKR deck you asked for. The one for the Q4 kickoff meeting. I was I was actually really excited about it. It felt strategic.
+Sarah: Good. That's what I want to hear. This is your chance to really own the narrative, to set the vision for the next quarter. I'm excited to see it.
+Alex: Well about that. There's there's been a development. A a really big one.
+Sarah: Oh? What's wrong?
+Alex: I was you know how you encouraged me to sit in on some of the other leadership syncs, just to observe?
+Sarah: Yeah, for cross-functional context. Good idea. What happened?
+Alex: I was in the engineering leadership sync this morning. Just just listening in. And Mike, the VP of Engineering he presented his org's priorities for Q4.
+Sarah: Okay And?
+Alex: He he has a massive, all-hands-on-deck platform migration initiative. He's calling it 'Project Bedrock.' Apparently, our entire core infrastructure the the main database, the API gateway it's all running on a deprecated version that's going out of support. It's becoming a huge security and stability risk.
+Sarah: He what?
+Alex: It's a massive undertaking. And it's an all-hands-on-deck thing. He he has allocated 70% of all engineering resources across the entire company to it for all of Q4.
+Sarah: Seventy. Percent.
+Alex: Yeah. I I was floored. I almost unmuted to say something. No one no one mentioned this to me. Not my eng lead, nobody. He must have just told his leadership team.
+Sarah: That He and I talked about this. I knew this project was coming. I asked him about it two weeks ago. He told me it was a Q1 2026 project. He told me that.
+Alex: Well, in the meeting, he said he said a recent security audit came back with a bunch of P0 vulnerabilities, and it's accelerated the timeline. He said the CTO is mandating it. It's a must-do, no exceptions for Q4. He he basically said all new feature work, unless it's a P0 bug, is on hold. Indefinitely.
+Sarah: On hold? On hold? No. No, that is that's not acceptable. We have a product to run. We have OKRs to hit. Expansion is the company theme, Alex. The CEO set that theme! We cannot just stop. We can't just sacrifice the entire fourth quarter.
+Alex: I know. I I know. That's that's the problem. I I don't see how we can do anything we planned. I don't see how we can do the onboarding work, or or any of the recommendation engine work. Not with 30% of our engineering team and that's if we even get that 30%. He said that's mostly for critical maintenance.
+Sarah: We're not we're not just going to accept this. This is this is Mike being Mike. He always does this. It 'Project Bedrock' it sounds big and important, but 70%? No. That's that's padding. He's padding his resources. Your onboarding project is critical. The recommendation engine is critical for next year's growth.
+Alex: I I don't know, Sarah. He he had the CTO on the call for that part. And the CISO. They they seemed aligned. The security audit findings sounded really bad. Like, we could be on the news for a data breach bad.
+Sarah: But that's that's always how these things are framed. They use that language to get what they want. We can't let engineering just just dictate our product roadmap. We are the product team. We own the what and the why. They own the how. We we set the priorities.
+Alex: But but what if it is that bad? I mean if the site goes down for a week, or or we have a massive data breach our onboarding flow doesn't matter. The rec engine doesn't matter. I I don't want to be the PM who was who was pushing for new features when the whole house was on fire.
+Sarah: It is not the house is on fire. It is we need to repave the driveway. It's important, but it is not everything. Your job-the job I am coaching you to do-is to advocate for the user and for the business. 'Project Bedrock' has it has zero direct user value. None. We are just supposed to sacrifice an entire quarter of growth, an entire quarter of momentum, for an internal engineering project?
+Alex: But it has indirect value, right? I mean stability? Security? Trust? Isn't that user value? I I'm just I'm just trying to understand how I'm supposed to plan Q4. I I can't build a deck based on resources I know I don't have. After the meeting, I pinged my eng lead. He confirmed it. He's he's losing most of his team to this Bedrock project. He he said he has one senior and one junior engineer for all of Q4. One and a half, really.
+Sarah: This is what I am talking about with stakeholder influence! This is the moment, Alex. You cannot just accept what engineering tells you! You have to challenge them! You need to go back to your eng lead and say, This isn't good enough. I need 50%. I need two more engineers. We have to deliver the onboarding work. Make the case!
+Alex: Make make the case? Sarah, they they said it's a non-negotiable from the CTO. I I can't I can't just go challenge the CTO. I'm I'm just a PM.
+Sarah: Alex, don't don't say that. Don't say just a PM. Okay? You are the owner of this product. You are the voice of the user and the business. When you say that, it it lets everyone else off the hook. This is your moment to to show that. This is exactly what you said you wanted to work on! Strategic influence! Stakeholder management! This is it! It's not just about planning when everything is sunny and easy. It's about finding a way when it's hard!
+Alex: I I Okay. I I'm sorry. I just So what do I do? I mean my Q4 kickoff deck it's it's useless now. The whole the whole plan is just it's gone.
+Sarah: Look, no, it's not useless. You just have to you have to remake it. This is the job. You have to create a plan that shows why our product initiatives are more important than than some percentage of this Bedrock project. You need to find data. Go pull the revenue numbers from the last cohort. Go pull the engagement numbers for new users. Go talk to Meena, right now, and get some preliminary data from her on the cost of not doing the recommendation engine. You have to fight back with data.
+Alex: I just I don't know if 'fighting' is the right I mean, it's a P0 security audit, Sarah. It sounded like it sounded like it's not really a discussion. It feels it feels wrong to to push back on on that.
+Sarah: Alex, growth is the company's health! 'Expansion' is the mandate from the CEO! You are letting Mike and his team just box us in! This is this is classic Mike. He wraps his projects in 'do-or-die' language, and it makes it impossible to prioritize against. I've seen him do this this is not new.
+Alex: Okay.
+Sarah: Okay? That's it? Just okay?
+Alex: I I don't I don't know what you want me to say, Sarah. You're you're telling me to fight a battle that it looks like we've we've already lost. And I'm just I'm trying to be realistic. I'm trying to figure out what's what's right for the company.
+Sarah: Realistic is one thing. Giving up is another. I'm I'm frustrated. I'm not frustrated at you. Well, not not entirely at you. I'm frustrated with Mike. He completely blindsided me. He he lied to my face. And he blindsided you. This is this is a mess. But we we cannot just roll over. We have to have a plan.
+Alex: So my Q4 kickoff meeting I I should postpone it?
+Sarah: No! Absolutely not. That shows that shows weakness. That shows we're we're defeated. We need to go in with a plan. A new plan. A a plan that assumes we we can't do everything. This is what real prioritization is. So you have to choose, Alex. That's the job. If you if you only have one and a half engineers what's the one thing we can't live without? Is it fixing onboarding, or is it getting the Rec Engine discovery done?
+Alex: I I can't. It's it's we need both. Onboarding fixes the leaky bucket. The rec engine fills the bucket. It's it's one without the other is pointless.
+Sarah: You have to choose! That is the job! That's prioritization! This is what your fancy scoring model was for! Use it! What does the model say?
+Alex: The model I I don't know. 'Project Bedrock' isn't it's not in the model. How how do I score a P0 security project against a new feature? The the model wasn't built for this. It it doesn't really work here.
+Sarah: Okay, okay. Calm down. Breathe. You're right. The model isn't broken. It's it's just we're at a different level of planning now. This is above the model. This is this is a political situation.
+Alex: I'm I'm not good at those. Sarah, I'm I'm really not.
+Sarah: Look. I'll I'll handle Mike. I'm going to have a talk with him this afternoon. As soon as we're off this call. I'm going to find out what's really going on, and I'm going to see if I can't claw back some resources. I'm going to fight for our team.
+Alex: Oh. Okay. Good. Yeah, you you can probably convince him. You're you're way better at that stuff than I am.
+Sarah: Don't don't just pass it off to me, Alex. This is still your plan. I'm going to go have the the political fight. That's my job as a Director. Your job is to figure out what to do with the outcome of that fight. Your job, now, is to create three scenarios for Q4.
+Alex: Three three scenarios?
+Sarah: Yes. Three. You're going to draft three different versions of the Q4 plan. Plan A: The 'We Fight' Plan. This is the optimistic plan. This is the plan where I go talk to Mike and I'm successful. I get us back 50% of our engineering team. What do we build? What are the OKRs? What's the timeline? That's your Onboarding AND Rec Engine plan. Plan B: The 'Skeleton Crew' Plan. This is the 30% resource plan-the one you have right now. This is your 'choose one thing' plan. You have to pick one. Onboarding or Rec Engine. And you have to write a one-page justification for why you chose one and what the business risk of not doing the other one is. 
+Sarah: Plan C: The 'Keep the Lights On' Plan. This is the worst-case scenario. Mike won't budge, and maybe he even takes more resources. We get 10% of engineering, just enough for P0 bug fixes. What does the product team do for three months? We can't just sit around. Do we pivot to 100% discovery for Q1 2026? Do we all embed with Meena and do a massive data-mining project? Do we do a six-city user research tour? What is the value we can provide without engineers?
+Alex: Okay so Plan A is the 'we get 50%' plan. Plan B is the 'we get 30%' 'choose one' plan. And Plan C is the 'we get nothing' discovery plan.
+Sarah: Exactly. This is your stretch assignment now. This is what strategic planning really is. It's not making a happy-path deck. It's messy. It's about adapting to new information and having contingency plans.
+Alex: Okay. Yeah. No, I I get it. Three plans. By by when? For the kickoff meeting?
+Sarah: I want to see drafts of all three by end of day Wednesday.
+Alex: Wednesday? That's that's two days.
+Sarah: Yes. It's a sprint. This is a crisis, Alex. We need to move fast. This is this is the real work. Don't don't let this 'Project Bedrock' thing intimidate you. See it as an opportunity. An opportunity to show how you can adapt and lead through uncertainty.
+Alex: Yeah. Okay. An opportunity. Adapt. I I will. Three plans. By Wednesday.
+Sarah: Good. Alright, we're we're over time. I know this was this was a tough one. This Q4 thing is a massive curveball. But we'll figure it out. We always do.
+Alex: Yeah. Okay. Thanks, Sarah.
+Sarah: Are we are we good? You're you're really quiet.
+Alex: Yeah, no, I'm I'm good. Just it's a lot to think about. Three plans by Wednesday. I I should probably get started.
+Sarah: Okay. Well, ping me if you get stuck. But I want you to take the first full pass at all three. This is your Q4 plan to own. I'm just I'm here to support.
+Alex: Got it. Thanks. I'll I'll talk to you next week.
+Sarah: Yep. Bye.

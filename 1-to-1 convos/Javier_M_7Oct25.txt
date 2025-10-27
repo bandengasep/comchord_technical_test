@@ -1,0 +1,81 @@
+Participants:
+? Sarah Chen (Manager): Senior Director of Product
+? Javier Morales (Direct Report): QA Lead
+Date: October 7, 2025
+Time: 10:00 AM - 11:00 AM
+Format: Video call
+Sarah: Morning, Javier. How are you?
+Javier: Hello Sarah. I am well, thank you. I hope you had a good weekend.
+Sarah: It was pretty good, thanks. We actually, we finally did it. We took my nephew to that new science museum downtown. He's six, so his mind was just completely blown by the dinosaur exhibit. It was a lot of fun. A lot of walking, but fun. How about you? Any more productive work on the house?
+Javier: That sounds very nice. My daughter is also very interested in dinosaurs. We have not been to the new museum yet, but it is on our list. My weekend was less exciting. We were just preparing for my in-laws to visit next week. So, a lot of cleaning.
+Sarah: Oh, that's productive in a different way. Good luck with the visit. I know those can be a lot.
+Javier: Yes. Thank you.
+Sarah: So, I have our agenda, but before we jump into the official items, I need to know. The big news. Did she accept?
+Javier: Ah. Yes. The candidate. She did. She signed the offer on, I believe it was two days after our last conversation.
+Sarah: Yes! Oh, that is fantastic news. Javier, that's a huge win. Congratulations. I know how hard you and the team worked to find the right person.
+Javier: Thank you. Yes, we are very relieved. And very excited. She, her name is Maria, she has a two-week notice period, so she will be starting with us on October 20th.
+Sarah: October 20th. Okay, great. I'll make sure to put some time on her calendar for a welcome chat. That's really, that just brightens my whole week. That's great.
+Javier: Yes, the team is also looking forward to it. Her experience in performance testing will be very valuable.
+Sarah: Absolutely. Okay, well, speaking of valuable things, how is the new bug metric coming along? The bugs caught at API layer idea. Have you had a chance to start implementing that?
+Javier: We have. We held a team meeting to discuss the new workflow. We created the new tags in our bug tracking system, and we have started the process of tagging all new bugs.
+Sarah: How is it going? Is it a lot of overhead for the team?
+Javier: It is a new habit we must build. But no, I do not believe it is a significant burden. It adds perhaps thirty seconds to the bug filing process. The team understands the why behind it. They see the value in showing where our efforts are most effective.
+Sarah: That's great. I'm really curious to see what that data looks like after a full quarter. I think you were right, it's going to tell a much better story than just coverage percentage .
+Javier: I am hopeful. It will give us a clear data point on the value of the shift left strategy.
+Sarah: Exactly. Okay, good. And then my last follow-up: the certification. I have good news.
+Javier: Oh?
+Sarah: I got the budget approved. I had to do a little horse-trading with the finance business partner, but I was able to get it allocated from the Q4 professional development fund. So, you are 100 percent good to go. You should go ahead and register for the course and the exam.
+Javier: Sarah. That is excellent news. Thank you. I really appreciate you pushing for that. I know the budget is tight.
+Sarah: Of course. I meant it when I said I'm supportive of your development. This lines up perfectly with your goal of being our lead technical expert in this space. So, it was an easy case to make. I'm happy it worked out.
+Javier: Thank you. I will register this week.
+Sarah: Great. So, that was my list of follow-ups. But I wanted to circle back on two things we discussed last time. The two, I guess, harder topics.
+Javier: Okay.
+Sarah: The first one was the dynamic requirements issue. The churn you were seeing with the mobile redesign sprint.
+Javier: Ah. Yes.
+Sarah: So, I did talk to Alex. And I just want to say, thank you for flagging that. You were very professional about it. You focused on the process, and that made it a really clear and actionable piece of feedback.
+Javier: I just wanted to highlight the inefficiency.
+Sarah: And you did. So, I talked to Alex, and he was honestly a little embarrassed. He said he was so focused on getting the feel right that he was basically thinking out loud during the demos, and not realizing he was causing all this churn for you and for engineering.
+Javier: I see. It was not intentional.
+Sarah: No, not at all. It was a classic new PM blind spot. So, he and I talked, and he's going to be much, much stricter with himself. He's going to make sure that all that subjective feel stuff is discussed and documented before the ticket is considered ready for dev .
+Javier: That is a good outcome.
+Sarah: I think so. But, I've been thinking about it, and I don't think this is just an Alex problem . I think it's a system problem. You said yourself, you attend the grooming. You sign off. But this subjective stuff still slips through.
+Javier: It is very difficult to write an acceptance criteria for a feeling .
+Sarah: Exactly! So, I was wondering, what do you think we could do? You have the best quality mindset in the company. How do we test for a feeling before we write a single line of code?
+Javier: That is the central question of user experience . It is not simple.
+Sarah: No. But what if we changed the process? What if for highly visual or interactive stories, like animations, what if the Definition of Ready required a high-fidelity prototype? Like a Figma prototype that shows the animation, the timing. What if that was the thing we agree on and lock'?
+Javier: That would help. A lot. A prototype is unambiguous . We can test against the prototype. The acceptance criteria it could literally be: matches the Figma prototype link .
+Sarah: Right? I like that. It puts more up-front work on Product and Design , but it would save so much time on the backend for you and Engineering .
+Javier: It would. It would de-risk the sprint significantly.
+Sarah: Okay. Let's propose that. Let's, you and I, let's champion that in the next cross-functional meeting. Not blaming anyone. But as a positive process improvement .
+Javier: I would support that. I think the engineers would also .
+Sarah: I bet they would . Okay. Good. I feel better about that . I hate inefficiency .
+Javier: Me too .
+Sarah: So, the second topic I wanted to revisit was your dashboard . The health check dashboard idea .
+Javier: Oh. Yes. You were right . The automation roadmap is the P0 . I understand the focus .
+Sarah: I know . And I stand by that . The roadmap is the priority . But I think I was a little too fast to just say 'put it on the backlog' .
+Javier: ...
+Sarah: You said your team spends 15 to 20 percent of its time just fighting with environments . I heard that number . But I don't think I really 'processed' it . That's insane . That's one day a week . If we just hired Maria . And she's going to spend one day a week just validating her environment . That's a terrible return on our investment .
+Javier: It is a major source of drag . And frustration .
+Sarah: So, no . I don't think we can just put it on the backlog . I think we need to understand it . So, here's my new thought . What if we carved out a small amount of time . Not a full project . But a 'spike' . A one-day or two-day investigation . Could you use that time to build just a tiny prototype'? Like just for one service . Or just to scope out the actual work . So we can make a real decision .
+Javier: A spike . Yes. That is a good idea . With two days . I could definitely build a proof of concept . Just to show the value . I could check the status of three or four of our main dependencies .
+Sarah: See? That feels different . That feels like a data-gathering exercise . Not a distraction .
+Javier: It would also help us estimate the full project . We would know what the unknowns are .
+Sarah: Exactly. Okay. Let's do that . Can you find time for that in the next sprint'? A two-day spike . You can be the owner .
+Javier: Yes. I will add it to our backlog for the next planning session . That is very helpful . Thank you .
+Sarah: Good. No, thank you for bringing up ideas like that . That's what I need . I get so focused on the big roadmap . I can miss the pebbles in our shoes . And that 20 percent drag . That's a boulder , not a pebble .
+Javier: I am glad you see it that way .
+Sarah: So, speaking of the team . How is everyone'? We just went through the Q4 planning . I know that's always a lot .
+Javier: The team is doing well . They are ... . They are handling the workload . The automation work is challenging . But they enjoy it . It is better than just manual regression .
+Sarah: I can imagine . Are we still doing the two-day office week'? How's that feeling for your team'?
+Javier: Yes. Tuesdays and Thursdays . It is fine . I think most of the team prefers it . It is good to be in a room together for planning .
+Sarah: Yeah, I feel that way too . I find I'm so much more productive with whiteboarding when I'm actually there . But I love my Monday and Friday at home . It's a good balance .
+Javier: I agree . The focus time at home is very valuable .
+Sarah: So, we talked about your development with the certification . Is there anything else I can be doing to support you'? Any other areas you're interested in'?
+Javier: For now . I think the certification is the main focus . It is a large commitment . And my other goal is to successfully onboard Maria . And to deliver on this automation roadmap . That is enough .
+Sarah: That is more than enough. That's a huge plate . Okay. That's fair . Just know that the door is open . If you see another opportunity . Or if you run into another roadblock . Like the ones we talked about .
+Javier: I will . Thank you , Sarah . This was a very good conversation .
+Sarah: I agree . It was . Okay. So... action items . You're going to register for the certification . You're going to schedule the two-day spike for the health dashboard . And I will work with you on proposing that new Figma prototype process .
+Javier: That is correct .
+Sarah: Perfect. All right . Go enjoy the rest of your day . And let's talk again in a couple of weeks .
+Javier: Thank you . You too . Goodbye.
+Sarah: Bye , Javier .

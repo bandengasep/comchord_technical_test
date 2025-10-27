@@ -1,0 +1,395 @@
+﻿Code Review Weekly Workshop - Sep 09, 2022
+ Transcribed by TurboScribe.ai. Go Unlimited to remove this message. 
+[Speaker 1] (0:02 - 0:13)
+Hey, everybody. Thanks for joining us on the code review weekly workshop. And we have some things to discuss pertaining to code review.
+
+So, Heinrich, what's on your mind?
+
+[Speaker 2] (0:15 - 0:46)
+Yeah, first of all, yeah, thank you for organising this call. I find it super interesting. I just learned about it when you posted it in the Slack channel.
+
+And yeah, just in time, like, I had an interesting review yesterday. And it was a dependency update. And I also saw that you discussed some dependency updates on this call before.
+
+And they're always a challenge. Yeah, so... Do you want to share your screen if you're looking at something?
+
+[Speaker 6] (0:48 - 0:55)
+Yeah. Okay. Here.
+
+[Speaker 2] (0:55 - 2:15)
+I'm opening the MR. So, it's a... First, this was actually upgraded to 1.5, I think, or some of the latest version, right? And so, first thing I look at when reviewing dependency updates, of course, is the change log, right?
+
+It's like the obvious thing to check. But, you know, it's always good to also check the code. Because, you know, some things might not be in the change log.
+
+And in this case, that change, that bug wasn't obvious from this log. So, next thing is this link is linked to my.diffend. So, this is kind of like if you go to RubyGems and we open... RubyGems generates this link here in the review changes button to this my.diffend something with the versions. You could change the versions if you want to diff one older version to this new version.
+
+[Speaker 6] (2:15 - 2:16)
+Oh, cool.
+
+[Speaker 2] (2:16 - 4:27)
+And what's nice about this is that this actually diffs, you know, the actual contents of the gem, right? Because sometimes we're tempted to just go to the sidekick-cron repo and then, you know, look at the tags here and do a compare. But that's...
+
+For security reasons, that's not the best thing to do. Because, you know, what's the contents of the repo is not exactly... I mean, could be, like, you know, Poison or whatever.
+
+And the gem contains some other code. So, it's a good idea to do things. I don't know if Yarn NPM packages have something similar.
+
+But this is for RubyGems. We have this thing. And so, yeah.
+
+And for this one, it's a kind of... I wouldn't say we should, like, spend so much time into reviewing these gems. It's always daunting.
+
+Because, you know, you don't have, like... You don't know the whole codebase of that gem, right? But for this one, I was, like, contributing to this sidekick polar code.
+
+And so, I know this codebase. So, I kind of, like, I'm familiar with it. So, this is not, like, expected that you find bugs in upstream stuff.
+
+But I was just lucky to be familiar with the code here. And so, yeah. We found a bug.
+
+And then... Funny. Because after I found that sidekick cron bug, I actually found another bug in sidekick itself.
+
+Just by reading the code. Because it inherits sidekick code. And when I read the sidekick code, I found a bug where...
+
+Yeah, it's not so important. But the sidekick polling is supposed to depend on the number of processes running. So, that they get random...
+
+You know, if you have five processes, then every process should only ping, like, longer periods so that you don't get so many pings. Yeah. And the sidekick maintainer is very responsive.
+
+I filed a patch. It got merged the same day. So, that's cool.
+
+[Speaker 1] (4:28 - 4:28)
+Wow. Wow.
+
+[Speaker 2] (4:28 - 4:32)
+Cool. And yeah. Just wanted to share that.
+
+Interesting.
+
+[Speaker 1] (4:33 - 5:33)
+That is a really cool thing to share. And it's kind of really scary for everyone to see. Because these dependency update MRs are a little scary.
+
+Because a whole lot is changing. And it's a whole lot you don't have control over. And you kind of, you know, like to see examples of where I didn't need to spend all that time.
+
+But this is an example of you did need to spend all that time. And that's tough. That's really tough.
+
+So, yeah. I think the big question is, like, I'd love to hear your thoughts on this, Heinrich, and anyone else. Like, what's what is the how do you distinguish if this is if this is a dependency update that warrants that level of investigation or not?
+
+Because it is a lot. And it's a lot that, you know, some people may not be familiar with. So, what are your thoughts on making that decision, Heinrich?
+
+[Speaker 2] (5:34 - 6:33)
+Yeah. One of my criteria is, like, how important it is to the codebase. Like, if it's for one feature or something, and, you know, probably it's less important, right?
+
+If it's a development gem, then even less important to be more critical, right? But this is, like, sidekick. And I don't want to break sidekick.
+
+And it's, like, it would affect a lot of things. You know, if sidekick cron breaks, we do a lot of cron jobs and breaks. Or if it breaks sidekick.
+
+In this case, the bug is actually funny because what it does is it's altering sidekick behaviour instead of just, you know, altering its own behaviour, the cron behaviour. So, you know, it doesn't break sidekick for this bug. But it, you know, makes operations on sidekick more expensive.
+
+It increases the polling of the sidekick, even if it's not related to cron. So, yeah. If it's mission critical components, I try to be more critical.
+
+[Speaker 1] (6:38 - 7:25)
+**JASON LENGSTORF** Yeah, that's a good I think it's a good perspective. Because doing this on, like, a linter or something may not be as you may not need to spend as much time on that. Does anyone have any other thoughts about dependency upgrade MRs?
+
+These are my least favourite MRs. I hate how they feel like little ninjas that are unassuming, but they pack a lot. Cool.
+
+Thanks for sharing that, Heidrick. Yannick, do you want to **YANNICK MCNELLIS** I have one question before we move on.
+
+[Speaker 3] (7:25 - 7:39)
+I just thought of something. Like, when we do these dependency upgrade things, I don't know, I keep going back to that whole, like, multiversion compatibility. Is there any concerns that we should have about that?
+
+I guess. I don't know.
+
+[Speaker 1] (7:39 - 7:53)
+I don't know if there's **JASON LENGSTORF** So, that's a really good question. And Heidrick, please correct me if I'm wrong. And Terry, too, as being the resident representing the backend.
+
+[Speaker 3] (7:54 - 8:02)
+**HEIDRICK VAN HOUTEN** Yeah, I have to go look at that page every time to see the little pictures with the ship, because I don't remember what the order is to get rolled out.
+
+[Speaker 1] (8:02 - 9:09)
+**JASON LENGSTORF** I believe this has to do with different versions of our backend getting deployed and temporarily running at the same time. So, if nothing's changing with the database layer, and nothing's changing with the frontend layer, and the frontend can hit both types of the backends, I think that means it's pretty good. I think if we're changing something that, like, oh, it would interact, change how we'd interact with that database layer under different, and this database layer is now assuming just one protocol, that would cause issues.
+
+And then the more you move that up the layered architecture, I think that's when that causes issues. But it is worth looking into. And it's worth just pinging someone if you're not sure about it.
+
+If it's something as critical as Sidekiq that is talking to the database. And that's a really interesting point. Does Sidekiq talk to the database?
+
+I don't know. I'm talking like I know what I'm talking about.
+
+[Speaker 3] (9:09 - 9:20)
+Yeah. Yeah. There's also some concerns, I think, when you have, like, Sidekiq workers that have different code that are being called by...
+
+Yeah. There's some concerns there, but...
+
+[Speaker 1] (9:22 - 10:45)
+Yeah. So, if you have, like, backend A and backend B, and backend A is using updated Sidekiq, which uses a new, you know, some sort of breaking change data it's gonna write to the backend, then, yeah, whatever worker B that doesn't have that update won't be able to read that. So, that's a good point, too.
+
+Yeah. That's a really tough requirement to meet. Because on .com, like, we're pretty good if, like, we do these canary...
+
+The... I realised last time I looked at that, it's not just .com reliability, but apparently we have a... Maybe I shouldn't say apparently.
+
+We do have a commitment to customers that if they can subscribe to this zero downtime upgrade stream, if they just upgrade from one version to another version, and that adds... That's hard to... It just adds a bit of unintuitive complexity to how we do changes.
+
+But, yeah, thanks for bringing that up, Terry. If we're not sure, the very least thing is to ask a question. And I think that Doc has some resources to reach out to if you need help, I think, right?
+
+[Speaker 3] (10:47 - 11:27)
+Okay. I think so. Maybe the release managers might be a channel to go into if I was concerned, because I think that would be the team that I might ask.
+
+I'm putting eyes on this and someone from that team. Yeah. Yeah.
+
+But, yeah, I definitely don't go into the level... Like, I've only gotten a few dependency updates to review. And even when it's something that I'm really familiar with, like, I just did the Elasticsearch gem not too recently, and it's scary.
+
+So, I'm with you on that one. It seems so simple. It's just, like, there are often, like, a few lines of changes.
+
+[Speaker 1] (11:28 - 11:59)
+Yeah. I like to... This is a good question regarding this.
+
+How do you all feel about how bleeding edge do we want to be with versions? Like, do we have baked into the bots that automatically update things? Do we have baked in to just always get me the latest?
+
+Or do we wait a certain amount of time before we get the latest? Does that question make sense?
+
+[Speaker 3] (12:01 - 12:14)
+Yeah. I think for global search, it's on us to make changes, and we're not on the latest quite often. But I don't know how the bot decides.
+
+[Speaker 2] (12:16 - 12:30)
+Yeah. I don't know if we have the renovate thing on our main Rails repo. I don't see the things from the bot.
+
+So, maybe we don't have it enabled. I don't know. We do that on other objects or repos, right?
+
+Yeah.
+
+[Speaker 1] (12:31 - 12:43)
+Then you're missing out on frontend. We have renovate, just keeps updating our packages. And, you know, these dependency upgrade MRs, I said they're the scariest.
+
+Now you have a robot making them. It's really scary.
+
+[Speaker 3] (12:44 - 12:52)
+Yeah. I guess I was wondering why I've never seen one for the backend, and that makes sense. So, the frontend has the bot that just...
+
+[Speaker 1] (12:52 - 13:11)
+Yeah. But it's targeted towards... I don't think it updates everything.
+
+It's targeted towards mostly development packages that are fairly trustworthy. I think we only put packages that we can have a fair amount of trust with on there. Yeah.
+
+[Speaker 3] (13:11 - 13:28)
+I feel like there's a balance, though, because we waited so long to update the gem. I don't think it had been updated since I joined in early 2020, and it's now 2022. So, the risk is a lot more when you wait too long.
+
+[Speaker 5] (13:28 - 13:28)
+Yeah.
+
+[Speaker 3] (13:28 - 13:39)
+So, I feel like there's... It feels safe to not upgrade very often, but then also you have this... The reviewing becomes more complicated because you have so much more to go back and check.
+
+[Speaker 1] (13:40 - 13:48)
+That's a really good point. I think there's a curve there, probably a parabola.
+
+[Speaker 4] (13:52 - 14:01)
+Quick questions about something. I don't necessarily want to have this on the recording. Is this recording for internal, or can we just pause it for a second?
+
+[Speaker 1] (14:01 - 14:04)
+You don't want this on the recording? Well, too bad.
+
+[Speaker 4] (14:05 - 14:05)
+Please.
+
+[Speaker 1] (14:06 - 14:15)
+Wow, Yannick, what you just said was really profound and probably changed my life forever. Thanks for bringing that up.
+
+[Speaker 6] (14:15 - 14:16)
+Absolutely.
+
+[Speaker 1] (14:17 - 14:42)
+On talking about dependency upgrades, I do really want to check in with Natalia, because you just did a big Vue upgrade. Did we happen to see any any quirkiness of maybe... Was there any issues where we discovered some quirky behaviour with the new Vue that we had to push upstream fixes or something like that?
+
+Or what was...
+
+[Speaker 5] (14:43 - 15:40)
+I think you know the answer. I just don't want this to be recorded. So, yeah, there was an aftermath that was really impossible to check on the review, and this aftermath is growth of compile assets size.
+
+And it's not just a little growth, it was a really significant one that caused our pipelines running for much longer, taking much more resources. So we reverted the change in the end. And this is something that is really hard to find on the review stage, or even on testing a new package, because you can't see it on the GDK.
+
+And even when you check it on the MR, you have a slight increase in terms of bundle size, but not the way it affects the compiled assets. So yeah, we needed to revert this one, and still thinking how to resolve the problem.
+
+[Speaker 1] (15:42 - 16:23)
+That's tough. It's been really nice to prioritise some sort of way to let that be bubbled up. The warning of like, hey, MR is about to really change.
+
+And we're trying to do that with the bundle stuff, but I know that's touch and go, isn't super reliable. But those are tough, the kind of situations that you really don't get to know about until we're considering reverting now. And that's, yeah.
+
+Okay. Thanks for sharing, Natalia.
+
+[Speaker 2] (16:24 - 17:11)
+Yeah, I just remembered something else that's similar. I remember doing a Ruby gem upgrade before where it has C extensions. And what happens is we package our GitLab omnibus in different platforms, and turns out it doesn't compile on certain architectures and all that.
+
+And you find out later, too late, right? And yeah. But good thing is I saw a Slack message about distribution, adding a new job to our pipeline where it does package on all platforms or something.
+
+I forgot the name. But that's a good thing to do when you see a dependency update that touches C extensions or whatever local thing that could affect other platforms.
+
+[Speaker 1] (17:12 - 17:42)
+Yeah, that's a good point. Cool. Well, I hope I don't have a dependency upgrade MR anytime soon.
+
+I'm joking. No, I actually feel more equipped to handle them in the way that serves our customers best. So, thanks for the discussion.
+
+Did you want to bring up some of the things you're observing with the maintainer? Or do you want to hop to Aston?
+
+[Speaker 4] (17:44 - 17:45)
+Hop to where?
+
+[Speaker 1] (17:45 - 17:51)
+Hop to MR review pairing. That was the next thing on the list. Or we can...
+
+[Speaker 4] (17:54 - 18:04)
+Let's quickly make this a topic. So, hopefully everyone is familiar. There have been major changes to maintainer and reviewer responsibilities.
+
+[Speaker 1] (18:05 - 18:08)
+Do you want to share your screen so we're maybe looking at the thing?
+
+[Speaker 4] (18:08 - 18:43)
+Yes, yes, yes. So, I'd be curious about your take on this. I don't specifically have a...
+
+Well, I do have a lot of opinions on this, but I'm taking this as granted. There were not many surprises to me. Starting off with though, I feel like I have found at least one contradiction in there.
+
+And a quick one to start with, and that would be our reviewer values. And we could probably discuss about those.
+
+[Speaker 1] (18:43 - 18:49)
+Hey, Yannick, you're supposed to just review code, all right? Keep all of the reviewing to the code.
+
+[Speaker 4] (18:50 - 18:50)
+Nevermind the values.
+
+[Speaker 1] (18:50 - 18:55)
+Stop trying to find logical inconsistencies outside of the code. I'm joking. Gotcha.
+
+No worries.
+
+[Speaker 4] (18:56 - 20:05)
+But it's actually code related and very much so in this case, because what I want to highlight is something that I would still highlight. Here we are. Lean towards a bias for action and collaboration for velocity.
+
+Don't be afraid to fix linting areas. Summarise. If you find a really small thing, just fix it and go ahead because it might be, yeah, just a typo or something.
+
+Let's not block anybody. Just do it. But, and Heinrich, you can help me out because you've been very active in this thread.
+
+There has been, there have been changes to the, I don't know the exact term, but actually who's allowed to approve or merge. And we are, as far as I know, we are not even allowed to rebase anymore if we still want to approve something and actually fixing a typo or linting issue or something like that. But from my understanding, still fall into this category.
+
+So this sounds like a good idea, but from what I can see, I don't think it's possible at the moment. Like it is, but you would need another review after that.
+
+[Speaker 1] (20:05 - 21:34)
+Do you mind if I hop in? So this leaning towards a bias for action collaboration has been in the handbook for a year plus. Just recently, for some reason, maybe pushing like we need to, we need to show without a shadow of a doubt to some customers the kind of controls that we have internally.
+
+That's, there's some sort of external reason that's wanting us to be able to quickly show without a shadow of doubt there are no unauthorised changes hitting our repo. And there's a lot of interpretation of what unauthorised change means. But one way would be, hey, every change goes through review.
+
+I don't think that's some sort of way that that gets interpreted. And so, yeah, this is a, this is not the intent. It's not the, not the intent is sorry.
+
+The intent was not to prevent maintainers from having a bias for action, but that was kind of collateral damage to needing to set up these controls so that we can verify and prove these kinds of enquiries. So I did bring up some, I don't think Heinrich did too. Some, some, maybe you didn't.
+
+[Speaker 2] (21:34 - 21:58)
+I think this slide is actually like not updated because I remember there was an MR, because we had this like documented in the review something page in the handbook. And I remember the MR to change the approval rules also changed that to remove that, that section where you can apply your own suggestion thing. Maybe it was a different handbook page and this one wasn't updated.
+
+So yeah.
+
+[Speaker 1] (21:58 - 22:31)
+I think that's the case. This is a different handbook page. So again, unfortunately I mean, I would say here's the interesting thing though, is it's really just maintainers can't do that now.
+
+And hopefully we push hard to figure out, you know, Hey, this is an efficiency hut. It doesn't go with our values. We need to figure out a way to not only support enquiries of unauthorised changes, but also allow maintainers to do this.
+
+Regular reviewers should be able to do this, right?
+
+[Speaker 4] (22:32 - 22:45)
+That would be my question. I don't know, but I really want to highlight this. Like if, if a web viewer commits to, to a feature branch, is he or she still able to approve this amount?
+
+[Speaker 1] (22:45 - 22:52)
+But even if they can't, like we only need main, the maintainer reviews are the only thing that's actually required. So.
+
+[Speaker 4] (22:53 - 23:04)
+Fair point. Yeah. Yeah.
+
+Fair point. So yeah, it's, it doesn't really, well, but yeah, this does add friction for that and it's not great.
+
+[Speaker 1] (23:04 - 23:11)
+But yeah, you're right to highlight this. This is a little outdated and is worth clarifying, probably creating an MR to talk about it.
+
+[Speaker 4] (23:12 - 23:12)
+Yeah.
+
+[Speaker 1] (23:12 - 23:13)
+Thanks for bringing that up. Yeah.
+
+[Speaker 4] (23:14 - 23:17)
+Yep. We should update the sample page at least.
+
+[Speaker 3] (23:18 - 24:01)
+I've been seeing a lot of backend maintainers posting saying I've applied something and now I can't merge this. Can someone help merge this for me? And then I guess, I guess my only worry about that is like as a maintainer, it's hard for me to context switch into like an MR and just say, Oh, like, I don't want to just go and say, okay, I'll just go approve it without like looking at it.
+
+And then like, how much do you look at it? Do you need to go do a full review? Like, I don't know.
+
+Cause essentially like you're stamping your approval on it. And then you probably going to be the person that merges it without that much context. I don't know.
+
+[Speaker 1] (24:01 - 25:22)
+I'm not sure what's the right. No, that's a great point. But I think there's a, there's a hidden cost with what are they, what would they call it?
+
+Taking the big, the thick paintbrush and trying to do this big broad fix, which, you know, hurts this practise that we've done is it's going to, in the end, hurt the health of our code base because now there's friction towards bringing things up and fixing things that are just right there glaring glaringly obvious of like, Hey, we can just fix this and merge it and go. Now there's friction. And I think people will be less motivated to promote, you know, that level of health in the code base, because it's going to, you know, add a couple of days now before the MR gets merged and something that we need to be, I believe that we're wanting to address, but I guess for some reason we had to, we had to meet some sort of requirements first.
+
+So these are definitely, I think we could do better at being transparent on the reasons why some of those changes were made. I think some reasons were shared, but I still don't think it's shared so much that others reading it would come to the same conclusion. Like, I think that there's still more hidden context.
+
+[Speaker 4] (25:25 - 25:31)
+Do you know where there have been shared code because they didn't cross my path?
+
+[Speaker 1] (25:31 - 26:22)
+Um, it was on Slack. There was some announcement. Um, I don't know if it's in this, I don't know if it's in this thing too.
+
+So here's what's interesting. No, you're right. It's not in this one.
+
+Um, so this is what's so weird. It's like, so yeah, we, we had this huge maintainer working group putting together, you know, making consistent, getting rid of contradictions. And we're going to try to plot this course for what does being a reviewer and a maintainer mean?
+
+But then at the same time, we did this huge culture shift of using code owners. You can't approve if you haven't committed, like this happens separately. And that's, I think, part of the confusion here too.
+
+And that happened rather quickly, uh, for better. Independent from it.
+
+[Speaker 4] (26:22 - 26:22)
+Yeah.
+
+[Speaker 3] (26:22 - 27:08)
+Mm-hmm. I was in the maintainership working group. I didn't realise the other changes happening, but um, I also haven't gone to a tonne of the working group meetings just because the time was just not convenient for me.
+
+Um, but I have been working on some of the changes. I think there's still like one outstanding MR with regards to the trainee programme that has yet to be merged, but, um, I definitely kind of threw some interesting changes into like what we have been discussing. Yeah.
+
+What maintainership means. And I mean, I feel like we'll come up with something to get around, not around, but like to have somehow work that action for bias into the merging process.
+
+[Speaker 7] (27:09 - 27:10)
+Yeah.
+
+[Speaker 3] (27:10 - 27:13)
+But it still feels like a pretty fresh change.
+
+[Speaker 1] (27:13 - 27:18)
+So yeah, I don't know. We'll see. We'll see.
+
+[Speaker 4] (27:19 - 27:28)
+Could somebody lead me to any kind of resources about the newly introduced code owner review? Because I haven't fully gotten my head around this.
+
+[Speaker 1] (27:29 - 29:21)
+Um, I think Heinrich just stayed on the zoom chat. So sweet. Added to if someone can just add that to the agenda to that.
+
+Okay, cool. Thanks for bringing this up. Awesome.
+
+Um, yeah. Does anyone have any MRs that they'd like to share with us to review together? I know it's weird pairing hair reviewing is weird.
+
+Um, but I like to have this dedicated time for me to get on. I don't do any reviews during the week anymore. I just do it during this meeting.
+
+I'm that we can take a look at. But if you all have interesting, interesting, whether we don't even have to finish them, but just sometimes opening them up and talking about them can be helpful. I'm pausing because sometimes it takes like, take some time for it to bubble up.
+
+I'm like, oh, yeah, got this thing. All right, then I'm just gonna share my screen. I'm gonna go for it.
+
+Let me make sure I don't have any security MRs assigned to me. Okay. All right.
+
+I've shared this screen. Um, this one is like already in the third round of review, and is fairly small. And from the front end perspective, and this is probably going to be this the final round of review.
+
+So that might be cool. This is the dependency update I've been procrastinating on. Terry knows all about this.
+
+[Speaker 3] (29:22 - 29:26)
+This one is still out there.
+
+[Speaker 1] (29:26 - 29:54)
+I know. I know. I'm bad.
+
+This is my fault. I'm sorry. And I'm sorry, Sourcecraft.
+
+I apologise to Sourcecraft, too. This is one on the WebID project, which could be interesting. This is one that is new to me.
+
+It is on the GitLab UI project. I haven't read this at all. This might be fairly straightforward.
+
+What do you all think?
+ This file is longer than 30 minutes.
+ Go Unlimited at TurboScribe.ai to transcribe files up to 10 hours long.

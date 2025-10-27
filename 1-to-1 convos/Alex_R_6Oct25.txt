@@ -1,0 +1,74 @@
+﻿Participants:
+● Sarah Chen (Manager): Senior Director of Product
+● Alex Rodriguez (Direct Report): Product Manager
+Date: October 6, 2025
+Time: 2:30 PM - 3:30 PM
+Format: Video call
+Sarah: Hey Alex. How's it going?
+Alex: Hey Sarah. I'm doing okay. It's been a a busy week. Or, a busy last few days. How are you?
+Sarah: I'm good. I'm good. The weekend was nice, just quiet. My sister came over, we tried to make one of those ridiculous recipes you see online. It was a complete disaster. We had flour everywhere. It was it was pretty funny, actually.
+Alex: That sounds yeah, that sounds a lot better than my weekend. I was just, uh, staring at spreadsheets.
+Sarah: Yeah, I I can imagine. Look, last week was a lot. I know that. That whole Q4 planning thing just got completely derailed, and and I know that meeting with Mike threw a huge wrench in everything. It was it was a mess. I I was pretty spun out too, to be honest. I I felt totally blindsided.
+Alex: It was yeah. It was a lot to take in. I felt pretty, uh, pretty lost after that call. I I wasn't really sure what I was supposed to do.
+Sarah: I get it. I really do. My my frustration with Mike, it it probably came across pretty hot. And you were just the messenger. So first things first. I went and talked to Mike, right after our call.
+Alex: Oh, you did? How how did that go? Was he was he receptive?
+Sarah: It was it was a long conversation. We we grabbed an hour that afternoon. And you were right to be cautious. He's not wrong, Alex. That security audit is bad. It's really, really bad. And he's under a ton of pressure from the CTO and the CISO. He wasn't just padding his resources. I mean, maybe a little, he's still Mike. But the 70% number wasn't coming from nowhere. He he walked me through the actual audit findings. It's it's not just "repaving the driveway" like I said. It's it's more like the the driveway is a sinkhole and it's it's about to swallow the garage.
+Alex: Wow. So it's as bad as it looked. We get we get nothing for Q4. Is that is that the final word?
+Sarah: No, no, I didn't say that. That's that's where I pushed back. I I started by saying, okay, I get it. Bedrock is a P0. No argument. The company's health comes first. I I told him you were the one who flagged that, that you were you were the one saying we can't just just ignore this.
+Alex: Oh. You you told him that?
+Sarah: Yeah. I said, my PM gets it. We're not we're not here to fight you on the the need for the project. We're here to talk about the cost of it. The the cost to the rest of the business. And I I walked him through your 'leaky bucket' and 'fill the bucket' analogy. I I showed him the data you pulled on the search feature adoption, how that tiny UI change we just shipped how much it moved the needle. I basically said, Look, Mike, you can't just turn off the entire product org for three months. You you need us to keep the business running while you fix the foundation. You need us to be ready for Q1. If if you take 100% of our team, we we not only lose Q4, we we lose Q1 as well. Because we we won't be ready. We'll be starting from a a cold start.
+Alex: And what did he say to that?
+Sarah: He heard me. He he pushed back at first. He said, you know, security, security, security. But I I held firm. I said, okay, what what's the real number? 70% is is a blanket. What what do you actually need? And and we got into it. And he he can't give us back half the team. He just can't. The the people he needs for this are are the same people we need. The the core platform folks. But I did get a concession. A a big one, actually.
+Alex: Yeah?
+Sarah: He's giving us our 1.5 engineers, the the one senior and one junior. That's that's our team. Plus he's allocating one more senior engineer, a specialist in in data pipelines, to us for the quarter. She's she's not part of Bedrock, so so he's letting us have her. So, we have 2.5 engineers. It's not it's not Plan A, but it's a lot better than Plan C.
+Alex: Wow. 2.5. Okay. That's that's something. We can we can definitely do something with that.
+Sarah: Right. And you know, those those plans I asked you to work on? The the three scenarios? I know that was that was a fire drill. It was a really high-pressure ask. It it must have felt like a a pointless exercise, especially after how how intense our call was.
+Alex: I I mean, I I did them. I I spent most of the weekend on them, like I said. Staring at spreadsheets. I I wasn't sure what you what you really wanted to see.
+Sarah: Well, the work you did on Plan B, the 'skeleton crew' plan that was actually what helped me. That that was the key.
+Alex: It it was?
+Sarah: Yeah. I I'm serious. I I want to hear about it. What what did you land on for Plan B? You you had to pick one, right? Onboarding or the rec engine. What what was your call?
+Alex: I well, I I really struggled with it. It it felt like a false choice. Like you said, one one fills the bucket, one one stops the leak. But I I looked at the numbers. And and I chose to focus on the onboarding.
+Sarah: You did? Okay. Tell me why.
+Alex: I I wrote up the justification, just just like you asked. My my thinking was that the rec engine that's about growth. That's about about making the experience 10% or 20% better for for our engaged users. It's it's a huge opportunity. But the onboarding that's about survival. It it doesn't matter how many new users we get if if 40% of them leave in the first 24 hours. The the 'leaky bucket' is it's a P0, in its own way. It's it's just a a silent one. It's not not noisy like a security audit. So my Plan B was was to take the 1.5 engineers and just just hammer the onboarding flow. I I spec-ed out three three A/B tests we could run, the the ones with the highest confidence scores from our our research.
+Sarah: Alex that's that's exactly the right thinking. That's that's brilliant. That's that's the strategic trade-off. And that's that's what I used with Mike.
+Alex: You you did?
+Sarah: Yes. Because you had already thought through the trade-off. You you had the "why". That was the core of my conversation. I I used your exact thinking. I I said, Mike, you're you're protecting us from from one kind of fire. But but we have this other fire this this 'silent P0' that's that's burning through all our new business. And and I need I need to keep some resources on it. It it helped me frame the whole discussion. It wasn't just me going in angry. It was me going in with a a set of real, painful, business-critical trade-offs that that he was forcing me to make.
+Alex: Oh. I I'm glad it was I'm glad it was helpful. I was I was really worried I'd I'd missed the point. I I was worried you you thought I was was just giving up.
+Sarah: No. God, no. You you didn't miss the point. You you saw the whole board. You you were right to be pragmatic about the security risks. And I was I was just frustrated about being blindsided. You and I we're on the same team. My job is to handle the political fights with guys like Mike, so your job can be to to build the best product with what we've got. And now we know what we've got.
+Alex: Right. 2.5 engineers.
+Sarah: 2.5 engineers. So. Knowing that, what's our move? Your Plan B is is the foundation. Onboarding. Now now we have this this bonus engineer. This this data pipeline specialist. So now what?
+Alex: Well, with 2.5 that senior engineer, the data pipeline one that's that's perfect for Meena. That's that's exactly what she said she she would need. We could have that person embed with her, so her discovery sprint isn't just a a proposal with with mock data. It's it's an actual, buildable, Q1-ready data model. We could we could actually build the pipeline. We we could have it have it running in in shadow mode by by end of quarter.
+Sarah: Okay, I like that. So we use the one specialist engineer to get the rec engine teed up, so we can hit the ground running in Q1. That's smart. That's really smart. So what about the other 1.5?
+Alex: The one senior and one junior? We we stick to Plan B. We we still have to fix the leaky bucket. We we can't wait on that. We should take that 1.5 and just just hit the onboarding flow. Hard. We could we could probably ship two of those those three A/B test winners. Maybe maybe all three. We could we could make a real dent in that new user drop-off.
+Sarah: So the plan is a two-track Q4. Track one is onboarding improvements. Track two is rec engine preparation. Not just discovery. I I love that. That's a really strong, focused plan. It it feels right.
+Alex: Yeah. It feels it feels doable. It's not it's not the "expansion" quarter we wanted, but it's it's a "get ready for expansion" quarter. We're not losing time.
+Sarah: Exactly. We're not losing time. That's the perfect way to frame it. Okay. Let's do that. Can you build out that new Q4 deck? The the real one this time?
+Alex: Yeah. Yeah, I can. That that feels good. I can do that.
+Sarah: Great. You know on on that note, Alex. I I know our call last week was was pretty intense. I I was frustrated, and I I was pushing you. Hard. And and I'm not sure I I handled that in the best way with you. I I've been thinking about it. How how did that how did that land for you? Be be honest.
+Alex: Oh. I well. I I appreciate you asking. It it was tough. I I'm not going to lie. It it felt a little like like whiplash. We we were talking about this this big stretch assignment, you you wanted me to own Q4 and then then this bomb drops. And and I felt like I'd I'd failed the test before I even even knew what it was. It it felt like like you were I don't know. Disappointed in me. For for being realistic. It it made me want to just just shut down. Not not bring you solutions.
+Sarah: That's that's fair. That's really fair, Alex. And and thank you for saying that. That's that's the last thing I want. My my frustration was with Mike. It it was 100% with the the situation. But I I pointed it at you. And and that's on me. My my job is to make you feel like you can bring me bad news, not not make you afraid of it. I I don't want you to to ever feel like you you can't tell me the the hard truth.
+Alex: I I appreciate that. I I get it. I I get why you were frustrated. It was it was a crazy situation.
+Sarah: It was. And speaking of development. I I don't want you to think that that this whole thing was a a failed stretch assignment. It it just it changed. The the assignment changed. The the goal you you brought up a few weeks ago "strategic influence." That that was it. That that whole messy week that was it.
+Alex: How how do you mean? It it felt like you were the one you know, handling it. I I just I built some some plans that we we didn't even use.
+Sarah: No, that's that's not what I see. At all. Your your development goal it's not to to be me. It's not about about yelling in meetings or or having political fights with VPs. Honestly, I I don't even want you to do that. That's that's my job. I I'm the the 'political umbrella'. My my job is to to take that that heat, so you can you can do the real work.
+Alex: So what what is the strategic influence part, then?
+Sarah: It's it's what you just did. It's it's not it's not being the loudest. It's it's being the clearest. It's it's staying calm when when I'm not. It's it's taking a a messy, impossible situation like 'choose one or the other' and and doing the hard thinking to to build Plan B. It's it's finding the 'silent P0'. It's it's writing the justification. It's it's having the data. It's it's giving me the the 'why' so I I can go have the the political fight. You you didn't just just report the problem. You you framed the trade-off. You you gave me the ammunition. That is influence. That that's what seniority looks like.
+Alex: Huh. I I I never thought of it like that. I I just I just thought I was was making a spreadsheet.
+Sarah: It's it's the thinking behind the spreadsheet. So for your dev plan let's let's double down on that. I I want you to own this new two-track Q4 plan. I I want you to to present this one. The the 'get ready for expansion' plan. But I also want you to to start thinking about Q1. And Q2. I I want you to to work with Meena directly on the the business case for the rec engine. Not not just the the data model. The business model.
+Alex: What what do you mean?
+Sarah: I I want you to to build the the model that shows what what 'good' looks like. What what 10 million in revenue from this thing could could look like. What what metrics does it move? Is it is it retention? Is it is it average order value? Is it is it conversion? I I want you to to build the the 'why' for 2026.
+Alex: So I'm I'm not just just managing the the engineering sprints. I'm I'm building the the company-level justification for for next year.
+Sarah: Exactly. You you own the 'why'. You you build the the data-backed story. I'll I'll keep the VPs off your back. That's that's the partnership. How how does that feel?
+Alex: That that feels really good, actually. That that feels like like what I what I wanted to do. The the first Q4 plan it it felt like like I was just just reporting on on what we we already decided. This this feels this feels bigger.
+Sarah: It is. It is. You you've earned it. You you handled a a really tough, ambiguous, high-pressure week, and and you you produced a a clear, strategic plan. You you did great.
+Alex: Thanks, Sarah. That's that means a lot.
+Sarah: Great. You know, I I had a situation just like this, maybe maybe five years ago. A VP of platform, different guy, same same playbook. Pulled all our resources for a 'critical migration'. I I was so mad I could barely see straight. I I went into the meeting, I just I yelled. It was it was a total disaster. He he just shut me down. I got nothing. We we lost the whole quarter.
+Alex: Really?
+Sarah: Oh, yeah. It was bad. I I learned a lot. You you kept your cool last week. You you looked at the facts. You were right to be cautious. I I was just seeing red. You you handled it well.
+Alex: Thanks.
+Sarah: So, you're good? You you feel good about this new plan?
+Alex: Yeah. No, I I really do. 2.5 engineers. Track one, onboarding. Track two, rec engine prep. I I can sell that. I I feel good about that.
+Sarah: Good. Me too. Okay. Let's get to it. You you have a good rest of your week, okay?
+Alex: You too, Sarah. Thanks.
+Sarah: Talk soon.
+Alex: Bye.
